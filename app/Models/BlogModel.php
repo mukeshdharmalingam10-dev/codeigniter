@@ -6,6 +6,7 @@ use CodeIgniter\Model;
 
 class BlogModel extends Model
 {
+    //table
     protected $table      = 'blogs';       // database table name
     protected $primaryKey = 'id';
 
@@ -15,3 +16,4 @@ class BlogModel extends Model
         'created_at'
     ];
 }
+?>
