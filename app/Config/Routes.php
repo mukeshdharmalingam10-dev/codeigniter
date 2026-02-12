@@ -3,7 +3,7 @@
 namespace Config;
 
 use CodeIgniter\Router\RouteCollection;
-use CodeIgniter\Services;
+use Config\Services;
 
 $routes = Services::routes();
 
