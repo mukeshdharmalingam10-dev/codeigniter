@@ -30,17 +30,17 @@
                         <table class="striped responsive-table">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Item Name</th>
-                                    <th>Item Price</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
                                     <th>Actions</th>
+ 
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Alvin</td>
                                     <td>Eclair</td>
-                                    <td>$0.87</td>
+                                   
                                     <td>
                                         <button data-target="editModal1" class="btn waves-effect waves-light modal-trigger">Edit</button>
                                         <button class="btn red waves-effect waves-light">Delete</button>
@@ -49,19 +49,10 @@
                                 <tr>
                                     <td>Alan</td>
                                     <td>Jellybean</td>
-                                    <td>$3.76</td>
+                                  
                                     <td>
                                         <button data-target="editModal2" class="btn waves-effect waves-light modal-trigger">Edit</button>
                                         <button class="btn red waves-effect waves-light">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Jonathan</td>
-                                    <td>Lollipop</td>
-                                    <td>$7.00</td>
-                                    <td>
-                                        <button class="btn disabled">Edit</button>
-                                        <button class="btn red disabled">Delete</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -80,14 +71,14 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="create_name" type="text" class="validate">
-                        <label for="create_name">Name</label>
+                        <label for="create_name">Title</label>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
                         <textarea id="create_content" class="materialize-textarea" data-length="120"></textarea>
-                        <label for="create_content">Content</label>
+                        <label for="create_content">Description</label>
                     </div>
                 </div>
             </form>

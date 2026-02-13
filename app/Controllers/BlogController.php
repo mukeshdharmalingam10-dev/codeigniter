@@ -4,8 +4,11 @@ namespace App\Controllers;
 
 class BlogController extends BaseController
 {
+   
     public function index()
-    {
-        return view('blog');
+    {  
+        $blogModel = new \App\Models\BlogModel();
+        $data['blogs'] = $blogModel->getblogs();
+        return view('blog', $data);
     }
 }
