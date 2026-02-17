@@ -5,17 +5,10 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class BlogModel extends Model
-
 {
-
-
-    protected $table      = 'blog';       // database table name
+    protected $table = 'blogs';
     protected $primaryKey = 'id';
-    public function getblogs()
-    {
-        return $this->findAll();
-    }
-    
-
+    protected $allowedFields = ['title', 'description'];
 }
+
 ?>

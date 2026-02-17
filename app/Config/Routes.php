@@ -50,10 +50,11 @@ $routes->get('students', 'StudentController::index');
 $routes->post('students/save', 'StudentController::save');
 $routes->post('students/delete', 'StudentController::delete');
 
-// Blog example
-$routes->get('blog', 'BlogController::index');
-$routes->get('blog/create', 'BlogController::create');
-$routes->post('blog/store', 'BlogController::store');
+// Blog routes
+$routes->get('blogs', 'BlogController::index');
+$routes->post('blogs/create', 'BlogController::create');
+$routes->post('blogs/update/(:num)', 'BlogController::update/$1');
+$routes->post('blogs/delete/(:num)', 'BlogController::delete/$1');
 
 /*
 |--------------------------------------------------------------------------
